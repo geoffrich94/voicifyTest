@@ -1,12 +1,7 @@
 import React from "react";
+import { Navlink } from "../../../shared/types/navbar";
 
-interface NavlinkProps {
-  iconUrl: string;
-  text: string;
-  isActive: boolean;
-}
-
-const Navlink: React.FC<NavlinkProps> = ({ iconUrl, text, isActive }) => {
+const Navlink: React.FC<Navlink> = ({ iconUrl, text, isActive }) => {
   return (
     <li
       className={`flex flex-row items-center gap-x-3 list-none font-bold cursor-pointer ${
